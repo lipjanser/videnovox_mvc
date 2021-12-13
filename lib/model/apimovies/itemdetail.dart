@@ -74,7 +74,7 @@ class ItemDetail {
   }
 
   static Future<dynamic> retrieveData(String idmovie) async {
-    final response = await http.get("http://www.omdbapi.com/?apikey=b446ef61&i=$idmovie");
+    final response = await http.get("http://www.omdbapi.com/?apikey=SUA_CHAVE_AQUI&i=$idmovie");
 
     if (response.statusCode == 200) {
       return json.decode(response.body);
