@@ -32,7 +32,7 @@ class Item {
   }
 
   static Future<dynamic> retrieveDataApi(String searchtext) async {
-    final response = await http.get("http://www.omdbapi.com/?apikey=b446ef61&s=$searchtext");
+    final response = await http.get("http://www.omdbapi.com/?apikey=SUA_CHAVE_AQUI&s=$searchtext");
 
     if (response.statusCode == 200) {
       return json.decode(response.body);
